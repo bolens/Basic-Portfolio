@@ -38,7 +38,9 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
-
+h4 {
+  font-size: 1rem;
+}
 a {
   display: block;
 }
@@ -54,6 +56,9 @@ p:last-of-type {
     content:" ";
     display:block;
     clear:both;
+}
+.inline {
+  display: inline-block;
 }
 .col {
   float: left;
@@ -71,7 +76,18 @@ p:last-of-type {
   width: 960px;
   margin: 5% auto;
 }
-
+.btn,
+button {
+  background-color: var(--color-accent);
+  padding: 15px 30px;
+  border: none;
+  color: var(--color-font-alt);
+  font-size: .85rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
 .top-bar {
   position: relative;
   background-color: var(--color-head-bg);
@@ -115,7 +131,7 @@ p:last-of-type {
   background-color: var(--color-foot-bg);
   border-top: 5px solid var(--color-accent);
 
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
 
@@ -141,9 +157,6 @@ p:last-of-type {
   border-top: 3px solid var(--color-main-bd);
   margin-bottom: 1rem;
 }
-.block--content {
-
-}
 .block--content__small {
   max-width: 270px;
 }
@@ -153,4 +166,48 @@ p:last-of-type {
 .connect--icons img {
   height: 64px;
   width: 64px;
+}
+.about--image {
+  max-width: 150px;
+}
+.contact-form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: .85rem;
+  color: var(--color-font);
+
+}
+.cards {}
+.image-card-container {
+  width: calc(50% - 10px);
+  margin-bottom: 1rem;
+  float: left;
+}
+.image-card-container:nth-child(odd) {
+  margin-right: 20px;
+}
+.image-card {
+  position: relative;
+  color: var(--color-font-alt);
+  text-decoration: none;
+}
+.image-card---image {
+  width: 100%;
+}
+.image-card--text {
+  background-color: var(--color-accent);
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-25%);
 }
