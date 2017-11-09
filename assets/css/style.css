@@ -175,7 +175,6 @@ img {
 }
 .about--text:first-of-type {
   width: calc(100% - 10px);
-  float: left
 }
 .contact-form label {
   display: block;
