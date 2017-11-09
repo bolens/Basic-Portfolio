@@ -168,7 +168,14 @@ img {
   width: 64px;
 }
 .about--image {
-  max-width: 150px;
+  width: 200px;
+  margin-bottom: 1rem;
+  margin-right: 10px;
+  float: left;
+}
+.about--text:first-of-type {
+  width: calc(100% - 10px);
+  float: left
 }
 .contact-form label {
   display: block;
