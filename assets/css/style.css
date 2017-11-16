@@ -65,16 +65,16 @@ p:last-of-type {
 }
 .col--wide {
   width: 650px;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 .col--narrow {
   width: 270px;
-  margin-left: 20px;
 }
 .content {
   position: relative;
   width: 960px;
   margin: 5% auto;
+  min-height: calc(100vh - 247px);
 }
 .btn,
 button {
